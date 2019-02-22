@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js" charset="utf-8"></script>
+    <script src="" charset="utf-8"></script>
+    <script src="js/main.dashboard.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>NutritionTracker</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="background">
+        <img src="css/images/backgroundimage.jpeg" id='imgBackground'>
+      </div>
+      <div class="mainHeader">
+        <h1 id='date'></h1>
+      </div>
+      <div class="subHeader">
+        <h2 id='prevDay'>< Yesterday</h2>
+        <h2 id='today'>Today</h2>
+        <h2 id='nextDay'>Tomorrow ></h2>
+      </div>
+    </div>
+    <div class="meals">
+      <div class="breakfast">
+        <div class="mealHeader">
+          <h3>Breakfast</h3>
+          <button type="button" class='btnAddToMeal'>Add Food</button>
+          <button type="button" class='btnDeleteItems'>Delete Selected</button>
+
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems" id='breakfastDroppable'></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4 class='brCal'>Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id='breakfastTotals'>
+            <h5 class='totalCal' id='brCalTot'>0</h5>
+            <h5 class='protein' id='brProteinTot'>0</h5>
+            <h5 class='carbs' id='brCarbsTot'>0</h5>
+            <h5 class='fat' id='brFatTot'>0</h5>
+            <h5 class='fiber' id='brFiberTot'>0</h5>
+            <h5 class='sugar' id='brSugarTot'>0</h5>
+          </div>
+        </div>
+      </div>
+      <div class="lunch">
+        <div class="mealHeader">
+          <h3>Lunch</h3>
+          <button type="button" class='btnAddToMeal'>Add Food</button>
+          <button type="button" class='btnDeleteItems'>Delete Selected</button>
+
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems" id='lunchDroppable'></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4>Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id='lunchTotals'>
+            <h5 class='totalCal' id='lnCalTot'>0</h5>
+            <h5 class='protein' id='lnProteinTot'>0</h5>
+            <h5 class='carbs' id='lnCarbsTot'>0</h5>
+            <h5 class='fat' id='lnFatTot'>0</h5>
+            <h5 class='fiber' id='lnFiberTot'>0</h5>
+            <h5 class='sugar' id='lnSugarTot'>0</h5>
+          </div>
+        </div>
+      </div>
+      <div class="dinner">
+        <div class="mealHeader">
+          <h3>Dinner</h3>
+          <button type="button" class='btnAddToMeal'>Add Food</button>
+          <button type="button" class='btnDeleteItems'>Delete Selected</button>
+
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems" id='dinnerDroppable'></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4>Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id='dinnerTotals'>
+            <h5 class='totalCal' id='dnCalTot'>0</h5>
+            <h5 class='protein' id='dnProteinTot'>0</h5>
+            <h5 class='carbs' id='dnCarbsTot'>0</h5>
+            <h5 class='fat' id='dnFatTot'>0</h5>
+            <h5 class='fiber' id='dnFiberTot'>0</h5>
+            <h5 class='sugar' id='dnSugarTot'>0</h5>
+          </div>
+        </div>
+        </table>
+      </div>
+      <div class="extras">
+        <div class="mealHeader">
+          <h3>Extras</h3>
+          <button type="button" class='btnAddToMeal'>Add Food</button>
+          <button type="button" class='btnDeleteItems'>Delete Selected</button>
+
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems" id='extrasDroppable'></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4>Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id='extrasTotals'>
+            <h5 class='totalCal' id='extCalTot'>0</h5>
+            <h5 class='protein' id='extProteinTot'>0</h5>
+            <h5 class='carbs' id='extCarbsTot'>0</h5>
+            <h5 class='fat' id='extFatTot'>0</h5>
+            <h5 class='fiber' id='extFiberTot'>0</h5>
+            <h5 class='sugar' id='extSugarTot'>0</h5>
+          </div>
+        </div>
+      </div>
+      <div class="dailyTotals">
+        <div class="mealTotalsHeaders">
+          <h3>Daily Totals</h3>
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealToalsData" id='dailyTotal'>
+          <h5 class='totalCal' id='dailyCalTot'>0</h5>
+          <h5 class='protein' id='dailyProteinTot'>0</h5>
+          <h5 class='carbs' id='dailyCarbsTot'>0</h5>
+          <h5 class='fat' id='dailyFatTot'>0</h5>
+          <h5 class='fiber' id='dailyFiberTot'>0</h5>
+          <h5 class='sugar' id='dailySugarTot'>0</h5>
+        </div>
+        </table>
+      </div>
+    </div>
+    <div class="foodSearchModal">
+      <div class="foodSearchBoxArea">
+        <form class="foodSearch" action="index.html" method="post">
+          <input type="text" placeholder="Search foods">
+          <input type="submit" value='Search'>
+          <button type="button" id='btnCloseSearchModal'>Close</button>
+          <button type="button" id='btnClearSearch'>Clear</button>
+          <img src="css/images/poweredby_nutritionix_api.png" alt="">
+        </form>
+        <div class="searchResults">
+          <dl class='resultsList'>
+            <div class="wrapperDiv resultHeaders">
+              <span width='53px'></span>
+              <h3 class='item' id='itemHeader'>Item</h3>
+              <h4 class='nutrient'>Calories</h4>
+              <h4 class='nutrient'>Protein</h4>
+              <h4 class='nutrient'>Carbs</h4>
+              <h4 class='nutrient'>Fat</h4>
+              <h4 class='nutrient'>Fiber</h4>
+              <h4 class='nutrient'>Sugar</h4>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+      <nav>
+        <a href="../../index.html">Home</a>
+      </nav>
+    </div>
+  </body>
+</html>

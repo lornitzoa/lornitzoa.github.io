@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include ../partials/head.ejs %>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Add Food Item</h1>
+    <button type="button" class='btnAddFromAPI'>Search API for food</button>
+    <form action="/pantry" method="POST">
+      <h2>Basic Nutritional Info</h2>
+      <input type="text" name="name" /><br/>
+      <input type="text" name="brand" /><br/>
+      <input type="text" name="servingSize" /><br/>
+      <input type="text" name="calories" /><br/>
+      <input type="text" name="fat" /><br/>
+      <input type="text" name="carbs" /><br/>
+      <input type="text" name="fiber" /><br/>
+      <input type="text" name="sugars" /><br/>
+      <input type="text" name="protein" /><br/>
+      <h2>FODMAP Data</h2>
+      <div class="">
+        <input type="text" name="servingSizeW1" value=""><br/>
+        <input type="text" name="servingSizeV1" value=""><br/>
+        <input type="text" name="oligos1" value=""><br/>
+        <input type="text" name="fructos1" value=""><br/>
+        <input type="text" name="polyols1" value=""><br/>
+        <input type="text" name="lactos1" value=""><br/>
+      </div>
+      <div class="">
+        <input type="text" name="servingSizeW2" value=""><br/>
+        <input type="text" name="servingSizeV2" value=""><br/>
+        <input type="text" name="oligos2" value=""><br/>
+        <input type="text" name="fructos2" value=""><br/>
+        <input type="text" name="polyols2" value=""><br/>
+        <input type="text" name="lactos2" value=""><br/>
+      </div>
+      <div class="">
+        <input type="text" name="servingSizeW3" value=""><br/>
+        <input type="text" name="servingSizeV3" value=""><br/>
+        <input type="text" name="oligos3" value=""><br/>
+        <input type="text" name="fructos3" value=""><br/>
+        <input type="text" name="polyols3" value=""><br/>
+        <input type="text" name="lactos3" value=""><br/>
+      </div>
+      <input type="submit" name="" value="Submit">
+    </form>
+
+  </body>
+</html>

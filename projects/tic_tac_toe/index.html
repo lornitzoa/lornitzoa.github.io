@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe!</h1>
+    <div class="main-container">
+      <div class="input-container">
+        <div class="roundDiv">
+          <h2>Round</h2>
+          <h3 id='round'>0</h3>
+        </div>
+        <div class="playerAssignments">
+          <h3 id='xPlayerH2'class='playerAssignments'></h3>
+          <h3 id='oPlayerH2' class='playerAssignments'></h3>
+        </div>
+
+      </div>
+      <div class="board-container">
+
+        <div class="board">
+          <div id="diagonal" class='line'>
+
+          </div>
+
+          <div id="row" class='line'>
+
+          </div>
+          <div class='row' id="row1">
+            <div class="box top left"></div>
+            <div class="box top center"></div>
+            <div class="box top right"></div>
+          </div>
+          <div class='row' id="row2">
+            <div class="box left"></div>
+            <div class="box center"></div>
+            <div class="box right"></div>
+          </div>
+          <div class='row' id="row3">
+            <div class="box bottom left"></div>
+            <div class="box bottom center"></div>
+            <div class="box bottom right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="turnIndicator">
+          <h2>Player Turn</h2>
+          <h3 id='playerTurn'>Lets Play!</h3>
+        </div>
+
+        <div class="scoreDiv">
+          <h2>Score</h2>
+          <h3 id='player1Score'>Player 1 :</h3>
+          <h3 id='player2Score'>Player 2 :</h3>
+        </div>
+      </div>
+      <div id="modal-startGame">
+        <form class="formStart" action="index.html" method="post">
+          <div class="">
+            <h2>Player 1 Name</h2>
+            <input type="text" id='player1' class='userInput'>
+          </div>
+          <div class="">
+            <h2>Player 2 Name</h2>
+            <input type="text" id='player2' class='userInput'>
+          </div>
+          <input type="submit" class='submit' value='Start' id='btnStart'>
+        </form>
+      </div>
+      <div id="modal-endGame">
+        <div id="modal-textbox">
+          <h4 id='you-win'>Luke Wins!!</h4>
+          <button type="button" name="button" id='btnPlayAgain' class='btnsReplayOption'>Play Again</button>
+          <button type="button" name="button" id='btnNewPlayers' class='btnsReplayOption'>New Players</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <nav>
+        <a href="../../index.html">Home</a>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+body {
+  background: blue;
+}
+
+.foodSearchModal {
+  display: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

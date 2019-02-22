@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include ../partials/head.ejs %>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% include ../partials/nav.ejs %>
+    <h1>Edit Item</h1>
+    <form class="" action="/pantry/<%=item.id%>?_method=PUT" method="post">
+      <label for="">Name</label><input type="text" name="name" value="<%=item.name%>"><br/>
+      <label for="">brand</label><input type="text" name="brand" value="<%=item.brand%>"><br/>
+      <label for="">servingSize</label><input type="text" name="servingSize" value="<%=item.servingSize%>"><br/>
+      <label for="">calories</label><input type="text" name="calories" value="<%=item.calories%>"><br/>
+      <label for="">fat</label><input type="text" name="fat" value="<%=item.fat%>"><br/>
+      <label for="">totalCarbs</label><input type="text" name="carbs" value="<%=item.totalCarbs%>"><br/>
+      <label for="">dietaryFiber</label><input type="text" name="fiber" value="<%=item.fiber%>"><br/>
+      <label for="">sugars</label><input type="text" name="sugars" value="<%=item.sugars%>"><br/>
+      <label for="">protein</label><input type="text" name="protein" value="<%=item.protein%>"><br/>
+      <div class="fodmaps-container">
+        <label for="">FODMAPS</label><br/>
+        <div class="">
+          <label for="">Servering Size (weight)</label>
+          <label for="">Serving Size (volume)</label>
+          <label for="">Oligos</label>
+          <label for="">Fructos</label>
+          <label for="">polyols</label>
+          <label for="">Lactos</label>
+        </div>
+        <% let fodmaps = item.fodmaps %>
+        <% for (let i = 0; i < fodmaps.length; i++) { %>
+          <% for(let key in fodmaps[i]) { %>
+            <input type="text" name="<%=key%>" value="<%=fodmaps[i][key]%>">
+          <% } %>
+        <% } %>
+        </div>
+      </div>
+      <input type="submit" value="Submit Changes">
+    </form>
+  </body>
+</html>

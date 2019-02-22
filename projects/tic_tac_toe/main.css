@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+  background: url('images/xs-os.jpeg');
+  opacity: .8;
+  text-align:  center;
+  font-family: 'Indie Flower';
+  color: white;
+}
+
+h1 {
+  background-color: green;
+  font-size: 4em;
+  width: 25%;
+  margin: 0 auto;
+  padding: 5px 15px;
+  border: solid white 5px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 10px;
+  /* opacity: .9; */
+}
+
+h3 {
+  font-size: 4em;
+  color: rgb(214,2,253);214,2,253
+  /* color: rgb(250,156,3); */
+  font-weight: bold;
+  margin: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  /* background-color: green; */
+
+}
+
+/* BOARD */
+.board-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 700px;
+  background: green;
+  margin: 5px auto;
+  border-radius: 20px;
+  border: solid white 5px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  font-size: 2em;
+}
+
+
+
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.box {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border: solid white 8px;
+  font-size: 6em;
+  justify-content: center;
+  align-items: center;
+  color: rgb(154,0,190);
+
+}
+
+/*  animation support from  https://www.w3schools.com/howto/howto_css_shake_image.asp */
+.animation:focus {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.right {
+  border-right: none;
+}
+
+.left {
+  border-left: none;
+}
+
+.top {
+  border-top: none;
+}
+
+.bottom {
+  border-bottom: none;
+}
+
+#row {
+  background-color: rgb(235,143,0);
+  height: 20px;
+  width: 100%;
+  position: relative;
+  /* top: 400px; */
+  /* margin-top: 65px; */
+  display: none;
+}
+
+#col {
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  background-color: rgb(235,143,0);
+  height: 450px;
+  width: 20px;
+  /* display: none; */
+}
+
+
+/* diagonal line css from https://stackoverflow.com/questions/18012420/draw-diagonal-lines-in-div-background-with-css */
+#diagonal {
+  width: 600px;
+  height: 20px;
+  border-bottom: 20px solid rgb(235,143,0);
+  display: none;
+
+}
+
+
+#btnStart {
+  padding: 10px;
+  font-size: 3em;
+  border-radius: 10px;
+  /* width: 100px; */
+  color: green;
+  background-color: white;
+  border: white 2px solid;
+  margin: 20px;
+  padding: 0 20px;
+  font-family: 'Indie Flower';
+  font-weight: bold;
+}
+
+/* INPUT */
+
+.input-container {
+  width: 20%;
+  height: 700px;
+  background: green;
+  margin: 5px;
+  align-content: center;
+  border-radius: 20px;
+  font-size: 1em;
+  border: solid white 5px;
+}
+
+
+/* user input for start game */
+.userInput {
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 20px;
+  width:
+}
+
+/* INFO */
+.info-container {
+  width: 20%;
+  height: 700px;
+  background: green;
+  margin: 5px;
+  align-content: center;
+  border-radius: 20px;
+  border: solid white 5px;
+}
+
+.turnIndicator, .roundDiv {
+  height: 200px;
+}
+
+
+
+/* MODALS */
+
+/* modal css from Bobadilla's morning exercise on Modal Practice w03d04 */
+#modal-endGame {
+  background: rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  overflow: auto;
+  display: none;
+
+}
+
+#modal-startGame {
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  overflow: auto;
+  /* display: block; */
+  /* border: red 5px solid; */
+}
+
+.formStart  {
+  background-color: green;
+  opacity: .8;
+  height: 400px;
+  width: 800px;
+  margin: 150px auto;
+  color: white;
+  border: solid white 5px;
+  border-radius: 20px;
+}
+
+#modal-textbox {
+  height: 400px;
+  width: 800px;
+  margin: 100px auto;
+  color: white;
+  /* border: solid white 5px; */
+  border-radius: 20px;
+}
+
+.btnsReplayOption {
+  padding: 5px;
+  font-size: 3em;
+  color: green;
+  margin: 25px;
+  border: solid white 2px;
+  border-radius: 20px;
+}
+
+h4 {
+  margin: 0;
+  line-height: inherit;
+}
+/*
+#modal-textbox {
+
+  height: 500px;
+  width: 600px;
+  margin: 150px auto;
+  color: purple;
+} */
+
+#close {
+  font-size: 2em;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+}
+
+#you-win {
+  font-size: 10em;
+}
+
+nav {
+  background-color: rgba(242, 242, 242, .8);
+  border-radius: 20px;
+  padding: 15px;
+  margin-left: 50px;
+  max-width: 823px;
+  text-align: center;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+}

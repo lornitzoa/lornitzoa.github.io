@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)file:///Users/Anna/Documents/github_domain/lornitzoa.github.io/projects/unit1_project/index.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script src="./NutritionTracker_files/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="./NutritionTracker_files/jquery-ui-git.js" charset="utf-8"></script>
+    <script src="file:///Users/Anna/Documents/github_domain/lornitzoa.github.io/projects/unit1_project/index.html" charset="utf-8"></script>
+    <script src="./NutritionTracker_files/main.dashboard.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./NutritionTracker_files/main.css">
+    <title>NutritionTracker</title>
+  </head>
+  <body>
+    <div class="background">
+      <img src="./NutritionTracker_files/backgroundimage3.jpeg" alt="">
+    </div>
+    <div class="mainheader">
+      <h1 id="date">Friday, January 11, 2019</h1>
+    </div>
+    <div class="subHeader">
+      <h2 id="prevDay">&lt; Yesterday</h2>
+      <h2 id="today">Today</h2>
+      <h2 id="nextDay">Tomorrow &gt;</h2>
+    </div>
+    <div class="meals">
+      <div class="breakfast">
+        <div class="mealHeader">
+          <button type="button" class="btnAddToMeal">Add Food</button>
+          <button type="button" class="btnDeleteItems">Delete Selected</button>
+          <h3>Breakfast  </h3>
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems ui-droppable" id="breakfastDroppable"><div class="mealItemDiv ui-draggable ui-draggable-handle" style="position: relative;"><input type="checkbox" class="select"><dd class="item nutrient">Dark Chocolate - 1 oz</dd><dd class="brand nutrient">USDA</dd><dd class="totalCal nutrient">155.93</dd><dd class="carbs nutrient">17</dd><dd class="protein nutrient">1.44</dd><dd class="fat nutrient">9.13</dd><dd class="fiber nutrient">2.04</dd><dd class="sugar nutrient">13.08</dd></div><div class="mealItemDiv ui-draggable ui-draggable-handle" style="position: relative;"><input type="checkbox" class="select"><dd class="item nutrient">Candies, milk chocolate - 1 piece</dd><dd class="brand nutrient">USDA</dd><dd class="totalCal nutrient">37.45</dd><dd class="carbs nutrient">4.16</dd><dd class="protein nutrient">0.54</dd><dd class="fat nutrient">2.08</dd><dd class="fiber nutrient">0.24</dd><dd class="sugar nutrient">3.6</dd></div><div class="mealItemDiv ui-draggable ui-draggable-handle" style="position: relative;"><input type="checkbox" class="select"><dd class="item nutrient">Candies, milk chocolate - 1 bar, miniature</dd><dd class="brand nutrient">USDA</dd><dd class="totalCal nutrient">37.45</dd><dd class="carbs nutrient">4.16</dd><dd class="protein nutrient">0.54</dd><dd class="fat nutrient">2.08</dd><dd class="fiber nutrient">0.24</dd><dd class="sugar nutrient">3.61</dd></div></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4 class="brCal">Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id="breakfastTotals">
+            <h5 class="totalCal" id="brCalTot">230.83</h5>
+            <h5 class="protein" id="brProteinTot">2.52</h5>
+            <h5 class="carbs" id="brCarbsTot">25.32</h5>
+            <h5 class="fat" id="brFatTot">13.29</h5>
+            <h5 class="fiber" id="brFiberTot">2.52</h5>
+            <h5 class="sugar" id="brSugarTot">20.29</h5>
+          </div>
+        </div>
+      </div>
+      <div class="lunch">
+        <div class="mealHeader">
+          <button type="button" class="btnAddToMeal">Add Food</button>
+          <button type="button" class="btnDeleteItems">Delete Selected</button>
+          <h3>Lunch</h3>
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems ui-droppable" id="lunchDroppable"></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4>Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id="lunchTotals">
+            <h5 class="totalCal" id="lnCalTot">0</h5>
+            <h5 class="protein" id="lnProteinTot">0</h5>
+            <h5 class="carbs" id="lnCarbsTot">0</h5>
+            <h5 class="fat" id="lnFatTot">0</h5>
+            <h5 class="fiber" id="lnFiberTot">0</h5>
+            <h5 class="sugar" id="lnSugarTot">0</h5>
+          </div>
+        </div>
+      </div>
+      <div class="dinner">
+        <div class="mealHeader">
+          <button type="button" class="btnAddToMeal">Add Food</button>
+          <button type="button" class="btnDeleteItems">Delete Selected</button>
+          <h3>Dinner</h3>
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems ui-droppable" id="dinnerDroppable"></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4>Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id="dinnerTotals">
+            <h5 class="totalCal" id="dnCalTot">0</h5>
+            <h5 class="protein" id="dnProteinTot">0</h5>
+            <h5 class="carbs" id="dnCarbsTot">0</h5>
+            <h5 class="fat" id="dnFatTot">0</h5>
+            <h5 class="fiber" id="dnFiberTot">0</h5>
+            <h5 class="sugar" id="dnSugarTot">0</h5>
+          </div>
+        </div>
+        
+      </div>
+      <div class="extras">
+        <div class="mealHeader">
+          <button type="button" class="btnAddToMeal">Add Food</button>
+          <button type="button" class="btnDeleteItems">Delete Selected</button>
+          <h3>Extras</h3>
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealItems ui-droppable" id="extrasDroppable"></div>
+        <div class="mealTotals">
+          <div class="mealTotalsHeaders">
+            <h3>Meal Totals</h3>
+            <h4>Calories</h4>
+            <h4>Protein</h4>
+            <h4>Carbs</h4>
+            <h4>Fat</h4>
+            <h4>Fiber</h4>
+            <h4>Sugar</h4>
+          </div>
+          <div class="mealToalsData" id="extrasTotals">
+            <h5 class="totalCal" id="extCalTot">0</h5>
+            <h5 class="protein" id="extProteinTot">0</h5>
+            <h5 class="carbs" id="extCarbsTot">0</h5>
+            <h5 class="fat" id="extFatTot">0</h5>
+            <h5 class="fiber" id="extFiberTot">0</h5>
+            <h5 class="sugar" id="extSugarTot">0</h5>
+          </div>
+        </div>
+      </div>
+      <div class="dailyTotals">
+        <div class="mealTotalsHeaders">
+          <h3>Daily Totals</h3>
+          <h4>Calories</h4>
+          <h4>Protein</h4>
+          <h4>Carbs</h4>
+          <h4>Fat</h4>
+          <h4>Fiber</h4>
+          <h4>Sugar</h4>
+        </div>
+        <div class="mealToalsData" id="dailyTotal">
+          <h5 class="totalCal" id="dailyCalTot">230.83</h5>
+          <h5 class="protein" id="dailyProteinTot">2.52</h5>
+          <h5 class="carbs" id="dailyCarbsTot">25.32</h5>
+          <h5 class="fat" id="dailyFatTot">13.29</h5>
+          <h5 class="fiber" id="dailyFiberTot">2.52</h5>
+          <h5 class="sugar" id="dailySugarTot">20.29</h5>
+        </div>
+        
+      </div>
+    </div>
+    <div class="foodSearchModal">
+      <div class="foodSearchBoxArea">
+        <form class="foodSearch" action="file:///Users/Anna/Documents/github_domain/lornitzoa.github.io/projects/unit1_project/index.html" method="post">
+          <input type="text" placeholder="Search foods">
+          <input type="submit" value="Search">
+          <button type="button" id="btnCloseSearchModal">Close</button>
+        </form>
+        <div class="searchResults">
+          <dl class="resultsList">
+            <div class="wrapperDiv resultHeaders">
+              <span width="53px"></span>
+              <h3 class="item" id="itemHeader">Item</h3>
+              <h4 class="nutrient">Calories</h4>
+              <h4 class="nutrient">Protein</h4>
+              <h4 class="nutrient">Carbs</h4>
+              <h4 class="nutrient">Fat</h4>
+              <h4 class="nutrient">Fiber</h4>
+              <h4 class="nutrient">Sugar</h4>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </div>
+
+  
+
+</body></html>

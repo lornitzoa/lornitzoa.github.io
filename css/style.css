@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|KoHo|Merienda');
+
+:root {
+  --green: rgb(142, 200, 169);
+  --opaque-white: rgba(254, 254, 254, 0.68);
+  --purple: rgba(123, 60, 173, 0.75);
+}
+
+
+
+body {
+  color: white;
+	background-color: var(--green);
+  font-family: "Merienda";
+  text-align: center;
+}
+
+/* Main Projects Page */
+
+.mainHeader {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.mainSubHeader {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+
+.main {
+  /* max-width: 1000px; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  /* margin: 50px; */
+}
+
+/* Bubbles */
+.bubble {
+  width: 500px;
+  height: 500px;
+  background-color: var(--opaque-white);
+  border-radius: 360px;
+  /* padding: 90px; */
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+}
+
+.bubbleItems {
+  margin-top: 100px;
+}
+
+.bubbleTitle {
+  color: var(--green);
+  /* font-size: 2em; */
+}
+
+.bubbleImg {
+  width: 280px;
+  border: 10px solid var(--green);
+  cursor: pointer;
+}
+
+.bubbleImg:hover, #imgTicTacToe:hover {
+  border: solid 10px var(--purple);
+  animation:
+}
+
+#imgTicTacToe {
+  transform: rotate(90deg);
+  width: 206px;
+  height: 280px;
+  border: 10px solid var(--green);
+  cursor: pointer;
+  margin-top: -40px;
+}
+
+/* Footer */
+
+.footerNav {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#linkedInImg {
+	border: none;
+	width: 30px;
+	height: 30px;
+  border: solid 3px var(--green)
+}
+
+#linkedInImg:hover {
+  cursor: pointer;
+  border: solid 3px var(--opaque-white);
+  border-radius: 360px;
+
+}
+
+.footerLinks {
+  text-decoration: none;
+  color: var(--opaque-white);
+  padding: 10px;
+  border-radius: 360px;
+
+  font-size: 2em;
+}
+
+.footerLinks:hover {
+  background: var(--purple);
+  border-radius: 360px;
+  padding: 10px;
+}
+
+/*  About Me Page */
+
+p {
+  padding: 0 25px;
+}
+
+ul {
+  padding: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  /* margin-left: 170px; */
+  margin-right: 50px;
+}
