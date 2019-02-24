@@ -30,7 +30,7 @@ body {
 .header {
   background-color: var(--background-white);
   position: absolute;
-  z-index: 2;
+  /* z-index: 2; */
   top: 0;
   height: 20%;
   width: 100%;
@@ -52,6 +52,7 @@ h2 {
   height: 100%;
   width: 100%;
 
+
 }
 
 
@@ -62,7 +63,10 @@ h2 {
   height: inherit;
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
 }
 
 .bubble {
