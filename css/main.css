@@ -11,9 +11,10 @@
 
 
 body {
+  
   background-image: url('images/fibonacci.jpg');
   background-size: cover;
-  background-position: center sticky;
+  background-position: center;
   /* background-repeat: no-repeat; */
   display: flex;
   align-items: stretch;
