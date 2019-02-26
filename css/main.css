@@ -30,6 +30,15 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: gold;
+}
+
 /* Main Projects Page */
 .main_container {
   margin: 0;
