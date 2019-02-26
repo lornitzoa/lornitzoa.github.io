@@ -11,12 +11,14 @@
 
 
 body {
-  
-  background-image: url('images/fibonacci.jpg');
+
+  background: url('images/fibonacci.jpg') center center fixed;
   background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center fixed; */
   /* background-repeat: no-repeat; */
   display: flex;
+  /* justify-content: justify; */
   align-items: stretch;
   flex-direction: column;
   margin: 0;
@@ -27,10 +29,17 @@ body {
 }
 
 /* Main Projects Page */
+.main_container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: static;
+  margin-bottom: 50px;
+}
 
 .header {
   background-color: var(--background-white);
-  position: absolute;
+  /* position: absolute; */
   /* z-index: 2; */
   top: 0;
   height: 20%;
@@ -48,24 +57,19 @@ h2 {
   margin: 0;
 }
 
-.main_container {
-  margin: 0;
-  height: 100%;
-  width: 100%;
 
-
-}
 
 
 /* Bubbles */
 .bubbles {
-  margin-top: 20%;
+  /* top: 20%; */
   padding: 0 50px;
   height: inherit;
-
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
 
 }
@@ -94,12 +98,17 @@ h2 {
 }
 
 .bubbleImg {
-  width: 60%;
-
+  width: 260px;
   margin: 10px;
   border: 10px solid var(--purple);
   border-radius: 360px;
   cursor: pointer;
+}
+
+#projectImg {
+  height: 260px;
+  width: 260px;
+  border-radius: 360px;
 }
 
 
@@ -128,23 +137,24 @@ h2 {
 
 /* Footer */
 
+.push {
+  height: 50px
+}
+
 .footer {
   background-color: var(--background-purple);
-  /* background-image: url('images/fibonacci.jpg'); */
-  position: sticky;
-  z-index: 2;
-  bottom: 0;
-  height: 15%;
   width: 100%;
+  margin-bottom: -20px;
 }
 
 
 .footerNav {
+
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 60px;
   width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 #linkedInImg {
