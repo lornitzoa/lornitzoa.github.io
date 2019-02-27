@@ -7,8 +7,8 @@
   --opaque-white: rgba(254, 254, 254, 0.68);
   --purple: rgb(123, 60, 173);
   --teal:rgb(46, 134, 105) ;
-  --faded-teal: rgba(46, 134, 105, .5)
-
+  --faded-teal: rgba(214, 175, 5, 0.6);
+/* rgba(46, 134, 105, .5) */
 }
 
 
@@ -169,6 +169,7 @@ h2 {
 
 .emailLink:hover {
   background-color: var(--faded-teal);
+  color: var(--purple);
   border-radius: 360px;
   cursor: pointer;
 }
