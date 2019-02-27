@@ -5,7 +5,7 @@
   --background-purple: rgb(109, 80, 152);
   --dark-purple: rgba(29, 21, 47, 0.9);
   --opaque-white: rgba(254, 254, 254, 0.68);
-  --purple: rgba(123, 60, 173, 0.75);
+  --purple: rgb(123, 60, 173);
   --teal:rgb(46, 134, 105) ;
   --faded-teal: rgba(46, 134, 105, .5)
 
@@ -173,28 +173,18 @@ h2 {
   cursor: pointer;
 }
 
+p {
+  text-align: center;
+  padding: 0 35px;
+  color: var(--dark-purple);
 
-/* Footer */
-
-.push {
-  height: 50px
 }
 
-.footer {
-  background-color: var(--background-purple);
-  width: 100%;
-  margin-bottom: -20px;
+.skills {
+  color: var(--dark-purple);
 }
 
 
-.footerNav {
-
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 60px;
-  width: 100%;
-  margin: 0;
-}
 
 #linkedInImg {
 	border: none;
@@ -227,9 +217,7 @@ h2 {
 
 /*  About Me Page */
 
-p {
-  padding: 0 25px;
-}
+
 
 ul {
   padding: none;
