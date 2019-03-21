@@ -124,6 +124,10 @@ p {
 
 }
 
+#behaverApp {
+  background-color: blue;
+}
+
 #nutritionApp {
   background-image: url('../projects/nutritionApp/css/images/backgroundimage.jpeg');
 }
