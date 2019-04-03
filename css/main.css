@@ -7,7 +7,7 @@
   --opaque-white: rgba(254, 254, 254, 0.68);
   --purple: rgb(123, 60, 173);
   --teal:rgb(46, 134, 105) ;
-  --faded-teal: rgba(214, 175, 5, 0.6);
+  --faded-teal: rgb(238, 176, 83);
 /* rgba(46, 134, 105, .5) */
 }
 
@@ -125,7 +125,10 @@ p {
 }
 
 #behaverApp {
+  background-image: url('images/behaver.png');
   background-color: blue;
+  background-position: center;
+  background-size: 260px 260px;
 }
 
 #nutritionApp {
@@ -136,6 +139,8 @@ p {
   background-image: url('../projects/tic_tac_toe/images/xs-os.jpeg');
 }
 
+
+
 .projectDetails {
   display: none;
   text-align: center;
@@ -143,7 +148,17 @@ p {
   /* padding: 10px; */
   cursor: pointer;
   font-size: 13px;
+}
 
+.pd-behaver {
+  display: none;
+  text-align: center;
+  padding: 25px;
+  /* padding: 10px; */
+  cursor: pointer;
+  font-size: 13px;
+  background-color: blue;
+  border-radius: 360px;
 }
 
 .projectDetails > img {
@@ -181,6 +196,11 @@ p {
   color: var(--dark-purple);
 }
 
+.bubbleImg:hover .pd-behaver {
+  display: block;
+  text-align: center;
+  color: white;
+}
 
 #projectImg {
   height: 260px;
@@ -209,7 +229,7 @@ p {
 
 .iconlink {
   width: 50px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   border: solid 10px rgba(251, 251, 251, 0);
   border-radius: 360px;
 

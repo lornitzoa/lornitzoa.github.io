@@ -1,8 +1,9 @@
 body {
+  background-color: rgb(24, 113, 177);
   color: white;
 }
 
-.background {
+/* .background {
   position: absolute;
   top: 0;
   left: 0;
@@ -10,7 +11,7 @@ body {
   height: 100%;
   z-index: -2;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+
   opacity: .5;
   filter:alpha(opacity=80);
 }
@@ -20,7 +21,7 @@ body {
   height: 100%;
   width: 100%;
   transform: rotate(180deg);
-}
+} */
 
 /* ============== */
 /*  DASHBOARD STYLES  */
