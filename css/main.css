@@ -224,8 +224,14 @@ p {
   width: 25px;
   height: 25px;
   margin: 10px;
+  border-radius: 360px;
+  border: solid 5px rgba(237, 233, 241, .1);
 }
 
+.pd-github-link:hover {
+  border: solid 5px var(--faded-teal);
+  border-radius: 360px;
+}
 
 
 .bubbleImg:hover, #nutritionApp:hover, #ticTacToe:hover {
