@@ -131,6 +131,12 @@ p {
   background-size: 260px 260px;
 }
 
+#planit {
+  background-image: url('images/planit.png');
+  background-position: center;
+  background-size: 260px 260px;
+}
+
 #thePantry {
   background-image: url('images/the.pantry.png');
   background-position: center;
@@ -209,6 +215,19 @@ p {
   height: 260px;
 }
 
+.pd-planit {
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 0;
+  /* padding: 10px; */
+  cursor: pointer;
+  font-size: 13px;
+  background-color: rgb(28, 181, 214);
+  border-radius: 360px;
+  height: 260px;
+}
+
 .projectDetails > #ticTacToeImg {
   width: 260px;
   height: 260px;
@@ -248,6 +267,12 @@ p {
 }
 
 .bubbleImg:hover .pd-behaver  {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.bubbleImg:hover .pd-planit {
   display: block;
   text-align: center;
   color: white;
