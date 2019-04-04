@@ -30,6 +30,7 @@ body {
 
 }
 
+
 a {
   text-decoration: none;
   color: white;
@@ -54,6 +55,15 @@ a:hover {
   height: 20%;
   width: 100%;
   margin: 0;
+}
+
+.mainHeader {
+  color: gold;
+}
+
+.mainHeader:hover {
+  color: var(--faded-teal);
+  cursor: pointer;
 }
 
 h1 {
