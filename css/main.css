@@ -141,6 +141,12 @@ p {
   background-size: 260px 260px;
 }
 
+#notfb {
+  background-image: url('images/notfb.png');
+  background-position: center;
+  background-size: 260px 260px;
+}
+
 #planit {
   background-image: url('images/planit.png');
   background-position: center;
@@ -183,6 +189,21 @@ p {
   font-size: 13px;
   background-color: blue;
   border-radius: 360px;
+}
+
+.pd-notfb {
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 0;
+  padding: 30px;
+  /* padding: 10px; */
+  cursor: pointer;
+  font-size: 13px;
+  background-color: lightblue;
+  border-radius: 360px;
+  height: 200px;
+  /* width: 240px; */
 }
 
 .pd-pantry {
@@ -277,6 +298,12 @@ p {
 }
 
 .bubbleImg:hover .pd-behaver  {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.bubbleImg:hover .pd-notfb  {
   display: block;
   text-align: center;
   color: white;
