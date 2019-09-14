@@ -131,7 +131,6 @@ p {
   border: 10px solid var(--purple);
   border-radius: 360px;
   cursor: pointer;
-
 }
 
 #behaverApp {
@@ -282,6 +281,16 @@ p {
   border: solid 5px var(--faded-teal);
   border-radius: 360px;
 }
+
+.tooltip {
+  display: none
+}
+
+.tootip:hover {
+  display: inline-block;
+}
+
+
 
 
 .bubbleImg:hover, #nutritionApp:hover, #ticTacToe:hover {
